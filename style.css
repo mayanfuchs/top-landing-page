@@ -3,8 +3,10 @@ body {
     flex-direction:column;
     justify-content: flex-start;
     height: 100vh;
+    margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 .nav {
     display: flex;
@@ -28,28 +30,27 @@ body {
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     color: #ffffff;
+    padding-left: 20px;
   
-}
-
-.column-text {
-    max-width: 50%; 
-
 }
 
 .column-image {
     max-width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-img {
-    max-width: 100%;
+    padding-right: 20px;
 }
 
-button {
+img {
+    max-width: 75%;
+}
+
+button.primary{
 
     color: #ffffff;
     background-color: #3882f6;
@@ -59,6 +60,15 @@ button {
     cursor: pointer;
 }
 
+button.secondary {
+    color: #ffffff;
+    background-color: #3882f6;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
 ul {
     display: flex;
     justify-content: flex-end;
@@ -71,7 +81,81 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-    font-size: 36px;
+h3 {
+    font-size: 24px;
     font-weight: 900;
+}
+
+.container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    
+    gap: 40px;
+    padding: 20px 0 40px 0;
+}
+
+.border-img {
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+}
+
+.sub-text {
+   text-align: center;
+}
+
+.container-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb
+}
+
+blockquote {
+    text-align: center;
+    max-width: 50%;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    padding: 24px;
+
+}
+
+.styled-quote cite {
+    display: block;                        
+    text-align: right;                   
+    font-size: 0.9rem;                   
+    color: #777;                            
+    margin-top: 5px;                        
+  }
+
+  .container-four {
+    
+    border-radius: 16px;
+    margin: 24px;
+    padding: 24px;
+    gap: 8px;
+    color: #ffffff;
+    background-color: #3882f6
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+   background-color: #1f2937;
+   padding: 24px;
+   margin: 0;
 }
