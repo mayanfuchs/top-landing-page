@@ -10,25 +10,33 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 .nav {
+    flex: 1 1 autox;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px 0 24px;
-    font-size: 24px;
+    font-size: 18px;
     color: #ffffff;
     background-color: #1f2937;
 }
 
-.container {
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: #1f2937;
- padding: 24px;
- gap: 24px;
+.hero {
+    background-color: #1f2937;
 }
+
+.container {
+    background-color: #fff;
+  
+   }
+
+   .hero, .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+   }
 
 .column {
     display: flex;
@@ -143,15 +151,19 @@ styled-quote cite {
 
   .container-four {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    border-radius: 16px;
+    
+    max-width: 920px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 12px;
     margin: 24px;
     padding: 24px;
+    gap: 8px;
     color: #ffffff;
     background-color: #3882f6
 }
+
 
 .footer {
    display: flex;
@@ -163,3 +175,7 @@ styled-quote cite {
    padding-top: 24px;
    margin-top: 0;
 }
+
+div {
+    border: 2px solid red;
+} 
